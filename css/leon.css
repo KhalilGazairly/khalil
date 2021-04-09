@@ -247,7 +247,7 @@
 /* Start about Sections */
     .about{
         margin-top: 120px;
-        height: 95vh;
+        height: 100vh;
         text-transform: uppercase;
     }
 
@@ -730,9 +730,27 @@
 
 /* Start Media */
 
+
+
+@media (max-width: 340.98px){
+
+    .work{
+        height: 110vh;
+    }
+    .about .about-desc button {
+        margin: 51% 4%;
+        transform: translate(7%, -155%);
+    }
+}
 /* // Extra small devices (portrait phones, less than 576px) */
     @media (max-width: 575.98px){
-    /* header media width  */
+        
+        /* header media width  */
+
+        .header{
+            padding-top: 50px;
+            width: 105%;
+        }
     .header .container{
         width: 100%;
     }
@@ -764,8 +782,17 @@
     /* End header media width  */
     
     /* start about media width  */
-    .about .about-content{
-        text-align: justify;
+    .container{
+        width: 100%;
+    }
+    .about {
+        height: 110vh;
+    }
+    .about .about-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .about-img {
@@ -777,7 +804,7 @@
     }
     .about .about-desc button {
         margin: 50% auto;
-            transform: translate(10%, -200%);
+        transform: translate(7%, -155%);
         }
         
         /* End about media width  */
@@ -785,16 +812,23 @@
         /* start portfolio media width  */
         /*  portfolio common   */
         
+        .portfolio{
+            width: 106%;
+        }
+        .portfolio .container{
+            width: 100%;
+        }
+    
         .portfolio-content{
             max-width: 100%;
         }
         
         .portfolio-content a{
-            font-size: 30px;
+            font-size: 20px;
         }
         
         .portfolio-content .back-proto {
-            width: 80%;
+            width: 100%;
             margin: auto;
         }
         
@@ -815,16 +849,36 @@
             margin: auto;
             max-width: 300px;
         }
+
+        
         .work-cont .text{
-            margin-top: 30px;
             text-align: center;
+            padding: 4px;
+            margin: 25px 1px;
+            
+        }
+        .work-cont h3{
+            font-size: 20px;
+        }
+        .work-cont p{
+            font-size: 12px;
         }
         /* ./ work common   */
         
         .work-content{
             flex-direction: column-reverse;
         }
+        
         /* End work media width  */
+        .footer {
+            text-align: center;
+            margin-top: 20%;
+            text-transform: uppercase;
+        }
+
+        .footer .social {
+            margin-bottom: 80px;
+        }
         
     }
     
